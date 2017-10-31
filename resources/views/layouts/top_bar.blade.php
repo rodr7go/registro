@@ -68,7 +68,15 @@
                         {{--</ul>--}}
                     {{--</li>--}}
                     <!-- Logout    -->
-                    <li class="nav-item"><a href="{{ URL::route('logout.index') }}" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>
+                    {{--<li class="nav-item"><a href="{{ URL::route('logout.index') }}" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>--}}
+
+                    <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
+                        <i class="fa fa-rocket"></i>
+                        Salir
+                    </a>
+                    <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
                 </ul>
             </div>
         </div>
