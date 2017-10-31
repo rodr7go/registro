@@ -1,0 +1,6 @@
+/* your styles go here */
+
+.login-page::before {
+    content: '';
+    background-image: url(../../img/dash-bg.jpg);
+}

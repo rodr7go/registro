@@ -1,9 +1,3 @@
 <script>
-    $(function(){
-        $('.table').footable({
-            "paging": {
-                "container": "#paging-ui-container"
-            }
-        });
-    });
+    $(function(){});
 </script>
